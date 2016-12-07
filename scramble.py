@@ -48,7 +48,7 @@ def permute(currentScramble, lettersLeft):
 def main():
 
     print("Welcome to the Scrambler!")
-    word = (sys.argv[1:] or str(input("Please enter a string to scramble: ")))[0]
+    word = (sys.argv[1:] or [input("Please enter a string to scramble: ")])[0]
 
     # call the recursive function here
     permute("",word)
